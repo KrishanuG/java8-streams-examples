@@ -1,4 +1,4 @@
-package streams;
+package streams.intermediate;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package streams;
+package streams.intermediate;
 
 import java.util.Comparator;
 import java.util.List;
@@ -21,6 +21,8 @@ public class PartitionEvenOddNumbers {
                                 n -> n % 2 == 0
                         ));
         System.out.println("Partition Result: " + partitionResult);
+        System.out.println("Only Even Number Result: " + partitionResult.get(true));
+        System.out.println("Only Odd Number Result: " + partitionResult.get(false));
 
         // Partition numbers into even and odd & counting
         Map<Boolean, Long> partitionResultWithCount = integerList.stream().collect(Collectors.partitioningBy(
